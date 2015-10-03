@@ -1,0 +1,30 @@
+# Syntax highlighting
+highlighter:         pygments
+
+# Permalinks
+#
+# Use of `relative_permalinks` ensures post links from the index work properly.
+permalink:           pretty
+relative_permalinks: true
+
+# Setup
+title:               Dat Duy Doan
+tagline:             Designer
+url:                 http://hellodat.com
+baseurl:             /
+
+# Social Network
+footer-links:
+  twitter:           dat
+  github:            datdoan
+
+
+# Google Analytics
+google_analytics:    UA-50186440-5
+
+# Assets
+#
+# We specify the directory for Jekyll so we can use @imports.
+sass:
+  sass_dir:          _scss
+  style:            :compressed
