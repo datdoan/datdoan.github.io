@@ -2,8 +2,13 @@
 //
 // Styles for managing the structural hierarchy of the site.
 
+
 .wrap {
   padding: 1.5rem;
+}
+
+.wrap--rosey {
+  background-color: #FDF7F7;
 }
 
 .container {
@@ -12,6 +17,8 @@
   margin-right: auto;
 }
 
-.wrap--rosey {
-  background-color: #FBEFEF;
+.project {
+  padding-top: 0;
+  padding-bottom: 0.5rem;
 }
+
