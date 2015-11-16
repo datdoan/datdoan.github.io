@@ -1,0 +1,11 @@
+a {
+  color: #313535;
+  text-decoration: underline;
+ 
+  &:hover, &:focus, &:active {
+    color: #004CB8;
+  }
+
+}
+
+

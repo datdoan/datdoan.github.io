@@ -1,0 +1,31 @@
+.project {
+  @include span-columns(6);
+  @include omega(odd);
+  @include media(max-width 767px) {
+    @include fill-parent
+  }
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.project--past {
+  @include fill-parent;
+  text-align: center;
+}
+
+.project__title {
+  @include position(absolute, 1rem null null 1rem);
+  @include media(max-width 414px) {
+    color: #313535;
+    padding: 0.4rem;
+    background-color: rgba(245, 245, 245, 0.87);
+    -webkit-box-shadow: 1px 1px 0px 0px rgba(0,0,0,0.14);
+    -moz-box-shadow: 1px 1px 0px 0px rgba(0,0,0,0.14);
+    box-shadow: 1px 1px 0px 0px rgba(0,0,0,0.14);
+  }
+  color: #f3f3f3;
+}
+
+.project__img {
+  display: block;
+}

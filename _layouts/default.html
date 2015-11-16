@@ -4,15 +4,15 @@
   {% include head.html %}
 
   <body>
+    
+    {% include header.html %}
+   
     {{content}}
-    <hr/>
-    <footer class="wrap">
-      <p class="container">
-        {% if site.footer-links.twitter %}<a href="https://twitter.com/{{ site.footer-links.twitter }}">Twitter</a>{% endif %}
-        {% if site.footer-links.github %}<a href="https://github.com/{{ site.footer-links.github }}">GitHub</a>{% endif %}
- 
-      </p>
-    </footer>
+    
+    {% include footer.html %}
+    
     {% include analytics.html %}
+ 
   </body>
+
 </html>
