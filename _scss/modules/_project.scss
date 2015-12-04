@@ -1,6 +1,6 @@
 .project {
   @include span-columns(6);
-  @include omega(odd);
+  @include omega(2n);
   @include media(max-width 767px) {
     @include fill-parent
   }
