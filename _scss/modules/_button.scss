@@ -6,7 +6,7 @@
    border-radius: 3px;
    border: 1px solid #ddd;
    color: #004CB8;
-   transition: all 150ms ease;
+   @include transition(all 150ms ease-in-out);
    &:hover, &:focus, &:active {
      color: #004CB8;
      border-color: #004CB8;
