@@ -5,10 +5,10 @@
    text-decoration: none;
    border-radius: 3px;
    border: 1px solid #ddd;
-   color: #004CB8;
+   color: blue;
    @include transition(all 150ms ease-in-out);
    &:hover, &:focus, &:active {
-     color: #004CB8;
-     border-color: #004CB8;
+     color: blue;
+     border-color: blue;
    }
 }
