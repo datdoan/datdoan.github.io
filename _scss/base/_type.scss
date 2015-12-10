@@ -1,11 +1,4 @@
 a {
-  color: blue;
+  color: $link-color;
   text-decoration: underline;
- 
-  &:hover, &:focus, &:active {
-    color: inherit;
-  }
-
 }
-
-

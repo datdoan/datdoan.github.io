@@ -1,7 +1,6 @@
 .project {
   @include fill-parent;
   margin-bottom: 1.5rem;
-  background-color: #AEB6C1;
 }
 
 .project--header {
@@ -9,7 +8,7 @@
 }
 
 .project--haft {
-  @include media(767px) {
+  @include media($screen-medium) {
     @include span-columns(6);
     @include omega(2n);
   }
