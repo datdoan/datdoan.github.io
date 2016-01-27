@@ -1,9 +1,18 @@
 .header {
-  padding: 3.375em 0 1.5em;
+  @include outer-container;
+  margin-top: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
-.header-title {
+.logo {
   font-weight: 400;
-  font-size: 1.5em;
-  color: #313535;
+  font-size: 1.424em;
+  color: $base-font-color;
+}
+
+.logo__style {
+  font-family: $serif-font-family;
+  font-style: italic;
+  font-size: 0.889em;
 }
