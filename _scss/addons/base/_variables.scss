@@ -31,6 +31,7 @@ $base-border: 1px solid $base-border-color;
 
 // Background Colors
 $base-background-color: #fff;
+$main-background-color: $action-color;
 $secondary-background-color: tint($base-border-color, 75%);
 
 // Forms
@@ -40,7 +41,3 @@ $form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $l
 // Animations
 $base-duration: 150ms;
 $base-timing: ease;
-
-// Screen size
-$screen-small: 320px;
-$screen-medium: 767px;

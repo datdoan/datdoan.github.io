@@ -4,11 +4,26 @@ body {
   font-feature-settings: "kern", "liga", "pnum";
   font-size: $base-font-size;
   line-height: $base-line-height;
-  background-color: $bg-blue;
+  background-color: $main-background-color;
+}
+
+%page-extend {
+  content: "";
+  display: table
 }
 
 .page {
   zoom: 1;
   min-height: 100vh;
   background-color: $base-background-color;
+
+  &:before {
+    @extend %page-extend;
+  }
+
+  &:after {
+    @extend %page-extend;
+    clear: both;
+  }
+
 }
