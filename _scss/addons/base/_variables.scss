@@ -16,7 +16,7 @@ $small-spacing: $base-spacing / 2;
 $base-z-index: 0;
 
 // Colors
-$blue: #477dca;
+$blue: blue;
 $dark-gray: #333;
 $medium-gray: #999;
 $light-gray: #ddd;
@@ -40,3 +40,7 @@ $form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $l
 // Animations
 $base-duration: 150ms;
 $base-timing: ease;
+
+// Screen size
+$screen-small: 320px;
+$screen-medium: 767px;
