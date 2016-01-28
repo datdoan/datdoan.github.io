@@ -13,8 +13,10 @@ body {
 }
 
 .page {
-  zoom: 1;
+  display: flex;
   min-height: 100vh;
+  flex-direction: column;
+  zoom: 1;
   background-color: $base-background-color;
 
   &:before {
@@ -26,4 +28,8 @@ body {
     clear: both;
   }
 
+}
+
+.page__content {
+  flex: 1;
 }
