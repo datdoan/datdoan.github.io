@@ -1,10 +1,10 @@
 #{$all-buttons},
 .button {
   appearance: none;
-  background-color: $action-color;
+  background-color: $button-background-color;
   border: 0;
   border-radius: $base-border-radius;
-  color: #fff;
+  color: $button-font-color;
   cursor: pointer;
   display: inline-block;
   font-family: $base-font-family;
@@ -21,8 +21,8 @@
 
   &:hover,
   &:focus {
-    background-color: shade($action-color, 20%);
-    color: #fff;
+    background-color: shade($button-background-color, 20%);
+    color: $button-font-color;
   }
 
   &:disabled {
@@ -30,7 +30,7 @@
     opacity: 0.5;
 
     &:hover {
-      background-color: $action-color;
+      background-color: $button-background-color;
     }
   }
 }
