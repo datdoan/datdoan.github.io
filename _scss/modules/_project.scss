@@ -7,7 +7,7 @@
 
 }
 .project__header {
-  @include position(absolute, 1rem null null 1rem);
+  @include position(absolute, null);
   color: $dark-gray;
   padding: 0.4rem;
   background-color: rgba(255, 255, 255, 0.90);
