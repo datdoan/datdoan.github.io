@@ -4,6 +4,8 @@
   padding-right: 1em;
 }
 
-.container, .footer {
+.header,
+.container,
+.footer {
   @extend %wrapper;
 }
