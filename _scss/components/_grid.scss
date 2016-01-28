@@ -1,0 +1,89 @@
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grid-cell {
+  flex: 1;
+}
+
+/* With gutters */
+.grid--gutters {
+  margin: -1em 0 0 -1em;
+}
+.grid--gutters > .grid-cell {
+  padding: 1em 0 0 1em;
+}
+
+/* Alignment per cell */
+.grid-cell--top {
+  align-self: flex-start;
+}
+.grid-cell--bottom {
+  align-self: flex-end;
+}
+.grid-cell--center {
+  align-self: center;
+}
+
+/* Base classes for all media */
+.grid--fit > .grid-cell {
+  flex: 1;
+}
+.grid--full > .grid-cell {
+  flex: 0 0 100%;
+}
+.grid--1of2 > .grid-cell {
+  flex: 0 0 50%
+}
+// .grid--1of2 > .grid-cell {
+//   flex: 0 0 100%;
+//   @media (min-width: 48em) {
+//       flex: 0 0 50%;
+
+//   }
+// }
+.grid--1of3 > .grid-cell {
+  flex: 0 0 33.3333%;
+}
+.grid--1of4 > .grid-cell {
+  flex: 0 0 25%;
+}
+
+/* Small to medium screens */
+@media (min-width: 24em) {
+  .small-grid--fit > .grid-cell {
+    flex: 1;
+  }
+  .small-grid--full > .grid-cell {
+    flex: 0 0 100%;
+  }
+  .small-grid--1of2 > .grid-cell {
+    flex: 0 0 50%;
+  }
+  .small-grid--1of3 > .grid-cell {
+    flex: 0 0 33.3333%;
+  }
+  .small-grid--1of4 > .grid-cell {
+    flex: 0 0 25%;
+  }
+}
+
+/* Large screens */
+@media (min-width: 48em) {
+  .large-grid--fit > .grid-cell {
+    flex: 1;
+  }
+  .large-grid--full > .grid-cell {
+    flex: 0 0 100%;
+  }
+  .large-grid--1of2 > .grid-cell {
+    flex: 0 0 50%
+  }
+  .large-grid--1of3 > .grid-cell {
+    flex: 0 0 33.3333%
+  }
+  .large-grid--1of4 > .grid-cell {
+    flex: 0 0 25%
+  }
+}

@@ -1,70 +1,10 @@
-.project {
-  @include fill-parent;
-  margin-bottom: 1.5rem;
-}
-
-.project--header {
-  position: relative;
-}
-
-.project--haft {
-  @include media($screen-medium) {
-    @include span-columns(6);
-    @include omega(2n);
-  }
-}
-
-.project--past {
-  @include fill-parent;
-  text-align: center;
-  background-color: white;
-}
-
 .project__title {
   @include position(absolute, 1rem null null 1rem);
-  @include media(max-width 414px) {
-    color: #313535;
-    padding: 0.4rem;
-    background-color: rgba(245, 245, 245, 0.87);
-    -webkit-box-shadow: 1px 1px 0px 0px rgba(0,0,0,0.14);
-    -moz-box-shadow: 1px 1px 0px 0px rgba(0,0,0,0.14);
-    box-shadow: 1px 1px 0px 0px rgba(0,0,0,0.14);
-  }
-  color: #f3f3f3;
-}
+  color: $dark-gray;
+  padding: 0.4rem;
+  background-color: rgba(255, 255, 255, 0.50);
+  box-shadow: -2px -2px 0px 2px rgba(0,0,0,.70);
 
-@-webkit-keyframes shake {
-  from, to {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-
-  10%, 30%, 50%, 70%, 90% {
-    -webkit-transform: translate3d(-10px, 0, 0);
-    transform: translate3d(-10px, 0, 0);
-  }
-
-  20%, 40%, 60%, 80% {
-    -webkit-transform: translate3d(10px, 0, 0);
-    transform: translate3d(10px, 0, 0);
-  }
-}
-
-@keyframes shake {
-  from, to {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-
-  10%, 30%, 50%, 70%, 90% {
-    -webkit-transform: translate3d(-10px, 0, 0);
-    transform: translate3d(-10px, 0, 0);
-  }
-
-  20%, 40%, 60%, 80% {
-    -webkit-transform: translate3d(10px, 0, 0);
-    transform: translate3d(10px, 0, 0);
-  }
 }
 
 .project {
@@ -76,13 +16,10 @@
     -webkit-animation-name: shake;
     animation-name: shake;
   }
-  
+
 }
 
 .project__img {
   display: block;
   cursor: not-allowed;
-  
 }
-
-
