@@ -1,6 +1,18 @@
 .grid {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 2em;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+/* Content justify */
+.grid--center {
+  justify-content: center;
+}
+.grid--space {
+  justify-content: space-between;
 }
 
 .grid-cell {
@@ -36,13 +48,6 @@
 .grid--1of2 > .grid-cell {
   flex: 0 0 50%
 }
-// .grid--1of2 > .grid-cell {
-//   flex: 0 0 100%;
-//   @media (min-width: 48em) {
-//       flex: 0 0 50%;
-
-//   }
-// }
 .grid--1of3 > .grid-cell {
   flex: 0 0 33.3333%;
 }
