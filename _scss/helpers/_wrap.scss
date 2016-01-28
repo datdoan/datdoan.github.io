@@ -1,7 +1,9 @@
-.container {
+%wrapper {
   @include outer-container;
-  margin-top: 1em;
   padding-left: 1em;
   padding-right: 1em;
 }
 
+.container, .footer {
+  @extend %wrapper;
+}
