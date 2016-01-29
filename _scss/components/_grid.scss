@@ -87,7 +87,7 @@
 }
 
 /* Large screens */
-@media (min-width: 48em) {
+@media (min-width: 36em) {
   .large-grid--fit > .grid-cell {
     flex: 1;
   }

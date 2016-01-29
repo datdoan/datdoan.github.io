@@ -1,5 +1,5 @@
 %wrapper {
-  @include outer-container;
+  @include outer-container(54em);
   padding-left: 1em;
   padding-right: 1em;
 }
