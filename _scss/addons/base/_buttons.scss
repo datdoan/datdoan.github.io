@@ -1,7 +1,7 @@
 #{$all-buttons},
 .button {
   appearance: none;
-  background-color: $button-background-color;
+  background-color: $secondary-background-color;
   border: 0;
   border-radius: $base-border-radius;
   color: $button-font-color;
@@ -21,7 +21,7 @@
 
   &:hover,
   &:focus {
-    background-color: shade($button-background-color, 20%);
+    background-color: shade($secondary-background-color, 20%);
     color: $button-font-color;
   }
 
@@ -30,7 +30,17 @@
     opacity: 0.5;
 
     &:hover {
-      background-color: $button-background-color;
+      background-color: $secondary-background-color
     }
+  }
+}
+
+.button--main {
+  background-color: $main-background-color;
+
+  &:hover,
+  &:focus {
+    background-color: shade($main-background-color, 20%);
+    color: $button-font-color;
   }
 }
