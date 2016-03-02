@@ -23,3 +23,6 @@ google_analytics:    UA-50186440-5
 sass:
   sass_dir:          _scss
   style:            :compressed
+
+exclude:
+    - node_modules
