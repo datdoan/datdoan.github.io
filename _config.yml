@@ -4,7 +4,7 @@ tagline:             Digital Designer
 description:         Dat is a designer with empathy for the users, the web and technology. His is a Digital Designer live in Sydney and like many design things, especially website design.
 keywords:            dat, duy, doan, digital, designer, developer, sydney, australia, website, design, online, conversion, marketing, optimisation, campaign
 url:                 http://hellodat.com
-baseurl:             ""
+baseurl:             "/"
 
 # Social Network
 footer-links:
@@ -21,4 +21,5 @@ sass:
   sass_dir:          _scss
   style:            :compressed
 
-
+exclude:
+    - node_modules
