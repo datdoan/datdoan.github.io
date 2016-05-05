@@ -1,23 +1,24 @@
-.project {
-  animation-duration: 0.7s;
-  animation-fill-mode: both;
-  &:active, &:hover {
-    animation-name: shake;
-  }
+.project--shake {
+	cursor: not-allowed;
+
+	animation-duration: 0.7s;
+	animation-fill-mode: both;
+	&:active, &:hover {
+		animation-name: shake;
+	}
 }
 
 .project__header {
-  @include position(absolute, null);
-  padding: 0.4rem;
-  color: $dark-gray;
-  background-color: rgba(255, 255, 255, 0.90);
-  box-shadow: -2px -2px 0px 2px $dark-gray;
-  border-right: 1px solid $base-background-color;
-  border-bottom: 1px solid $base-background-color;
-  z-index: 100;
+	@include position(absolute, null);
+	padding: 0.4rem;
+	color: $dark-gray;
+	background-color: rgba(255, 255, 255, 0.90);
+	box-shadow: -2px -2px 0px 2px $dark-gray;
+	border-right: 1px solid $base-background-color;
+	border-bottom: 1px solid $base-background-color;
+	z-index: 100;
 }
 
 .project__img {
-  display: block;
-  cursor: not-allowed;
+	display: block;
 }
